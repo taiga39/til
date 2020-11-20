@@ -1,9 +1,10 @@
 <?php
 use App\Item;
-use App\Log;
+use App\UseLogLog;
+
 class Order{
 
-    public function register($r){
+    public function register($r,$id){
         $user_id = $id;
         $items = $r["items"];
         $order->register($r);
@@ -19,7 +20,7 @@ class Order{
                     "order_id" => $order->id
                 ]);
             };
-            Log::create([
+            UseLogLog::create([
                 "order_id" => $order->id,
                 "user_id" => $user_id,
             ]);

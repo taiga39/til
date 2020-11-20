@@ -2,7 +2,7 @@
 
 use App\Order;
 use App\Item;
-use App\Log;
+use App\UseLog;
 
 class OrderCreateContoroller{
 
@@ -21,7 +21,7 @@ class OrderCreateContoroller{
                     "order_id" => $order->id
                 ]);
             };
-            Log::create([
+            UseLog::create([
                 "order_id" => $order->id,
                 "user_id" => $user_id,
             ]);

@@ -1,10 +1,10 @@
 <?php
 
-use App\Order;
+use App\NewOrder;
 class OrderCreateContoroller{
 
     public function store(Request $r,$id){
-        $order = new Order;
+        $order = new NewOrder;
         $order->register($r,$id);
     }
 }
