@@ -1,11 +1,11 @@
 <?php
 use App\Item;
-use App\Log;
+use App\UseLog;
 
-class Log{
+class UseLog{
 
     public function register($r,$id){
-        Order::create([
+        UseLog::create([
 
         ]);
     }

@@ -1,8 +1,8 @@
 <?php
-class Log{
+class UseLog{
 
     public function register(){
-        Log::create([
+        UseLog::create([
 
         ]);
     }

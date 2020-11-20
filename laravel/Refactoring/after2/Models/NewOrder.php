@@ -15,7 +15,7 @@ class NewOrder{
             foreach($items as $item){
                 Item::register;
             };
-            Log::register;
+            UseLog::register;
             DB::commit();
         }catch(\Exception $e) {
             DB::roolback();

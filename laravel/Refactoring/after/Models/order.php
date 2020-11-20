@@ -1,6 +1,6 @@
 <?php
 use App\Item;
-use App\UseLogLog;
+use App\UseLog;
 
 class Order{
 
@@ -20,7 +20,7 @@ class Order{
                     "order_id" => $order->id
                 ]);
             };
-            UseLogLog::create([
+            UseLog::create([
                 "order_id" => $order->id,
                 "user_id" => $user_id,
             ]);
