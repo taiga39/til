@@ -5,6 +5,11 @@ User.create(name: 'test')
 INSERT INTO `users` (`name`) VALUES ('test')
 
 rails文
+User.all
+素の文
+SELECT `users`.* FROM `users` LIMIT 11
+
+rails文
 User.where(name: "test)
 素の文
  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'test' LIMIT 11
