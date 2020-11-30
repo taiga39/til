@@ -1,6 +1,6 @@
 <?php
 use App\Item;
-use App\UseLogLog;
+use App\Log;
 
 class Order{
 
